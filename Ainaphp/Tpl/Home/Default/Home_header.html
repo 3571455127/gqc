@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$seo_keywords}"/>
+    <meta name="description" content="{$seo_description}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <!-- wap -->
+    <meta name="wap-font-scale" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="Robots" content="all">
+
+    <title>{if MODULE_NAME != 'Index'}{$seo_title}{else}{$site_name}{/if}</title>
+    <link rel="stylesheet" href="__PUBLIC__/www/css/lightgallery.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/swiper.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/main.css">
+    <script src="__PUBLIC__/www/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/www/js/lightgallery.js"></script>
+    <script src="__PUBLIC__/www/js/lg-zoom.js"></script>
+    <script src="__PUBLIC__/www/js/swiper.min.js"></script>
+    <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/www/js/main.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <header>
+        <div class="header-top">
+            <div class="top-bar clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="phone col-lg-2 col-md-3 col-sm-3"><span>{$phone}</span></div>
+                        <div class="eamil col-lg-2 col-md-3 col-sm-3">
+                            <a href="mailto:{$email}" target="_blank" class="emails">
+                                <span>{$email}</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index.php"><img alt="logo" src="__PUBLIC__/www/images/logo.png"></a>
+                    </div>
+
+                    <div id="navbar-example">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#home">Home</a></li>
+            <YP:subcat catid='0' id="r" where="listorder asc" limit="5" key="n">
+            <if condition = "$r[catname] neq 'THANKS' ">
+            <li>
+                <a href="#{$r.catdir}">{$r.catname}</a>
+            </li>
+            </if>
+            </YP:subcat>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
