@@ -350,19 +350,22 @@
                 <div class="container">
                     <div class="row">
                         <YP:list order="listorder desc" catid="95" id="r" limit="12"
-                            field='thumb,title,cont,listorder,id'>
+                            field='thumb,title,cont,listorder,id,document'>
                             <div class="pro-box clearfix">
                                 <div class="txt col-lg-6 col-md-6 col-sm-6">
                                     {$r.cont}
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery">
+                                    <div id="lightgallery{$r.id}">
                                             <div data-src="{$r.document}">
                                                 <img class="img-responsive" src="/Public/www/images/download-w.png"
                                                     alt="Thumb-1">
                                             </div>
                                         </div>
 
+                                    <script>
+                                        lightGallery(document.getElementById('lightgallery{$r.id}'));
+                                    </script>
                                     </div>
                                 </div>
                                 <div class="image col-lg-6 col-md-6 col-sm-6">
@@ -377,7 +380,7 @@
 
             <div class="container">
                 <div class="row">
-                    <YP:list order="listorder desc" catid="112" id="r" limit="12" field='thumb,title,cont,listorder,id'>
+                    <YP:list order="listorder desc" catid="112" id="r" limit="12" field='thumb,title,cont,listorder,id,document'>
                         <div class="pro-box clearfix">
                             <div class="image col-lg-6 col-md-6 col-sm-6">
                                 <img src="{$r.thumb}" alt="{$r.title}">
@@ -386,13 +389,16 @@
                                 {$r.cont}
                                 <div class="pro-btn clearfix">
                                     <a href="#contact" class="btns">Contact Us</a>
-                                    <div id="lightgallery">
+                                    <div id="lightgallery{$r.id}">
                                         <div data-src="{$r.document}">
                                             <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                 alt="Thumb-1">
                                         </div>
                                     </div>
 
+                                    <script>
+                                        lightGallery(document.getElementById('lightgallery{$r.id}'));
+                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -405,19 +411,22 @@
                     <div class="row">
 
                         <YP:list order="listorder desc" catid="113" id="r" limit="12"
-                            field='thumb,title,cont,listorder,id'>
+                            field='thumb,title,cont,listorder,id,document'>
                             <div class="pro-box clearfix">
                                 <div class="txt col-lg-6 col-md-6 col-sm-6">
                                     {$r.cont}
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery">
+                                    <div id="lightgallery{$r.id}">
                                             <div data-src="{$r.document}">
                                                 <img class="img-responsive" src="/Public/www/images/download-w.png"
                                                     alt="Thumb-1">
                                             </div>
                                         </div>
 
+                                    <script>
+                                        lightGallery(document.getElementById('lightgallery{$r.id}'));
+                                    </script>
                                     </div>
                                 </div>
                                 <div class="image col-lg-6 col-md-6 col-sm-6">
@@ -433,7 +442,7 @@
 
             <div class="container">
                 <div class="row">
-                    <YP:list order="listorder desc" catid="114" id="r" limit="12" field='thumb,title,cont,listorder,id'>
+                    <YP:list order="listorder desc" catid="114" id="r" limit="12" field='thumb,title,cont,listorder,id,document'>
                         <div class="pro-box clearfix">
                             <div class="image col-lg-6 col-md-6 col-sm-6">
                                 <img src="{$r.thumb}" alt="{$r.title}">
@@ -442,13 +451,16 @@
                                 {$r.cont}
                                 <div class="pro-btn clearfix">
                                     <a href="#contact" class="btns">Contact Us</a>
-                                    <div id="lightgallery">
+                                    <div id="lightgallery{$r.id}">
                                         <div data-src="{$r.document}">
                                             <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                 alt="Thumb-1">
                                         </div>
                                     </div>
 
+                                    <script>
+                                        lightGallery(document.getElementById('lightgallery{$r.id}'));
+                                    </script>
                                 </div>
                             </div>
                         </div>
