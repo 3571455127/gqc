@@ -390,129 +390,168 @@
         <div class="product">
             <h3>Product</h3>
             <div class="title">THIS IS PRODUCT SHOWROOM</div>
-            <div class="container">
-                <div class="row">
-                    <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id,document")->where(" 1  AND status=1  AND catid=94")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
-                            <div class="image col-lg-6 col-md-6 col-sm-6">
-                                <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
-                            </div>
-                            <div class="txt col-lg-6 col-md-6 col-sm-6">
-                                <?php echo ($r["cont"]); ?>
-                                <div class="pro-btn clearfix">
-                                    <a href="#contact" class="btns">Contact Us</a>
-                                    <div id="lightgallery<?php echo ($r["id"]); ?>">
-                                        <div data-src="<?php echo ($r["document"]); ?>">
-                                            <img class="img-responsive" src="/Public/www/images/download-b.png"
-                                                alt="Thumb-1">
-                                        </div>
-                                    </div>
-                                    <script>
-                                        lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
-                                    </script>
-                                </div>
-                            </div>
-                        </div><?php endforeach; endif;?>
-                </div>
-            </div>
-
-            <div class="pro-bg">
+            <!-- pc -->
+            <div class="pc-product">
                 <div class="container">
                     <div class="row">
-                        <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=95")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
+                        <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id,document")->where(" 1  AND status=1  AND catid=94")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
+                                <div class="image col-lg-6 col-md-6 col-sm-6">
+                                    <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                                </div>
                                 <div class="txt col-lg-6 col-md-6 col-sm-6">
                                     <?php echo ($r["cont"]); ?>
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery">
+                                        <div id="lightgallery<?php echo ($r["id"]); ?>">
                                             <div data-src="<?php echo ($r["document"]); ?>">
-                                                <img class="img-responsive" src="/Public/www/images/download-w.png"
+                                                <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                     alt="Thumb-1">
                                             </div>
                                         </div>
-
+                                        <script>
+                                            lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
+                                        </script>
                                     </div>
-                                </div>
-                                <div class="image col-lg-6 col-md-6 col-sm-6">
-                                    <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
                                 </div>
                             </div><?php endforeach; endif;?>
                     </div>
                 </div>
 
-            </div>
+                <div class="pro-bg">
+                    <div class="container">
+                        <div class="row">
+                            <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id,document")->where(" 1  AND status=1  AND catid=95")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
+                                    <div class="txt col-lg-6 col-md-6 col-sm-6">
+                                        <?php echo ($r["cont"]); ?>
+                                        <div class="pro-btn clearfix">
+                                            <a href="#contact" class="btns">Contact Us</a>
+                                            <div id="lightgallery<?php echo ($r["id"]); ?>">
+                                                <div data-src="<?php echo ($r["document"]); ?>">
+                                                    <img class="img-responsive" src="/Public/www/images/download-w.png"
+                                                        alt="Thumb-1">
+                                                </div>
+                                            </div>
 
-            <div class="container">
-                <div class="row">
-                    <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=112")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
-                            <div class="image col-lg-6 col-md-6 col-sm-6">
-                                <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
-                            </div>
-                            <div class="txt col-lg-6 col-md-6 col-sm-6">
-                                <?php echo ($r["cont"]); ?>
-                                <div class="pro-btn clearfix">
-                                    <a href="#contact" class="btns">Contact Us</a>
-                                    <div id="lightgallery">
-                                        <div data-src="<?php echo ($r["document"]); ?>">
-                                            <img class="img-responsive" src="/Public/www/images/download-b.png"
-                                                alt="Thumb-1">
+                                            <script>
+                                                lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
+                                            </script>
                                         </div>
                                     </div>
+                                    <div class="image col-lg-6 col-md-6 col-sm-6">
+                                        <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                                    </div>
+                                </div><?php endforeach; endif;?>
+                        </div>
+                    </div>
 
-                                </div>
-                            </div>
-                        </div><?php endforeach; endif;?>
                 </div>
-            </div>
 
-            <div class="pro-bg">
                 <div class="container">
                     <div class="row">
-
-                        <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=113")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
+                        <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id,document")->where(" 1  AND status=1  AND catid=112")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
+                                <div class="image col-lg-6 col-md-6 col-sm-6">
+                                    <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                                </div>
                                 <div class="txt col-lg-6 col-md-6 col-sm-6">
                                     <?php echo ($r["cont"]); ?>
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery">
+                                        <div id="lightgallery<?php echo ($r["id"]); ?>">
                                             <div data-src="<?php echo ($r["document"]); ?>">
-                                                <img class="img-responsive" src="/Public/www/images/download-w.png"
+                                                <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                     alt="Thumb-1">
                                             </div>
                                         </div>
 
+                                        <script>
+                                            lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
+                                        </script>
                                     </div>
                                 </div>
+                            </div><?php endforeach; endif;?>
+                    </div>
+                </div>
+
+                <div class="pro-bg">
+                    <div class="container">
+                        <div class="row">
+
+                            <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id,document")->where(" 1  AND status=1  AND catid=113")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
+                                    <div class="txt col-lg-6 col-md-6 col-sm-6">
+                                        <?php echo ($r["cont"]); ?>
+                                        <div class="pro-btn clearfix">
+                                            <a href="#contact" class="btns">Contact Us</a>
+                                            <div id="lightgallery<?php echo ($r["id"]); ?>">
+                                                <div data-src="<?php echo ($r["document"]); ?>">
+                                                    <img class="img-responsive" src="/Public/www/images/download-w.png"
+                                                        alt="Thumb-1">
+                                                </div>
+                                            </div>
+
+                                            <script>
+                                                lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="image col-lg-6 col-md-6 col-sm-6">
+                                        <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                                    </div>
+                                </div><?php endforeach; endif;?>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id,document")->where(" 1  AND status=1  AND catid=114")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
                                 <div class="image col-lg-6 col-md-6 col-sm-6">
                                     <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                                </div>
+                                <div class="txt col-lg-6 col-md-6 col-sm-6">
+                                    <?php echo ($r["cont"]); ?>
+                                    <div class="pro-btn clearfix">
+                                        <a href="#contact" class="btns">Contact Us</a>
+                                        <div id="lightgallery<?php echo ($r["id"]); ?>">
+                                            <div data-src="<?php echo ($r["document"]); ?>">
+                                                <img class="img-responsive" src="/Public/www/images/download-b.png"
+                                                    alt="Thumb-1">
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
+                                        </script>
+                                    </div>
                                 </div>
                             </div><?php endforeach; endif;?>
 
                     </div>
                 </div>
-
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <?php  $_result=M("Product")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=114")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="pro-box clearfix">
-                            <div class="image col-lg-6 col-md-6 col-sm-6">
-                                <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
-                            </div>
-                            <div class="txt col-lg-6 col-md-6 col-sm-6">
+            <!-- wap-product -->
+            <div class="wap-product">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="box">
+                            <div class="box-img"> <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>"></div>
+                            <div class="txt">
                                 <?php echo ($r["cont"]); ?>
                                 <div class="pro-btn clearfix">
                                     <a href="#contact" class="btns">Contact Us</a>
-                                    <div id="lightgallery">
-                                        <div data-src="<?php echo ($r["document"]); ?>">
-                                            <img class="img-responsive" src="/Public/www/images/download-b.png"
-                                                alt="Thumb-1">
-                                        </div>
-                                    </div>
+                                    <a href="" download=""> <img class="img-responsive"
+                                            src="/Public/www/images/download-b.png"></a>
 
                                 </div>
                             </div>
-                        </div><?php endforeach; endif;?>
+                        </div>
 
+
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -320,7 +320,8 @@ header .header-fixed .navbar-default .navbar-nav>li>a {
 
 /* header */
 
-header .wap-banner {
+header .wap-banner,
+.index .wap-product {
     display: none;
 }
 
@@ -828,7 +829,9 @@ footer form .footer-sub {
 
 
 @media screen and (max-width:768px) {
-    header .pc-banner {
+
+    header .pc-banner,
+    .index .pc-product {
         display: none;
     }
 
@@ -838,7 +841,8 @@ footer form .footer-sub {
 
     header .wap-banner,
     .index .about-bg .about-box,
-    .index .product .pro-box {
+    .index .product .pro-box,
+    .index .wap-product {
         display: block;
     }
 
@@ -902,6 +906,70 @@ footer form .footer-sub {
 
     .index .partner .box-img {
         margin-bottom: 20px;
+    }
+
+
+    .index .product .wap-product {
+        padding: 0 5%;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .index .product .wap-product .txt {
+        padding-left: 10%;
+        padding-top: 10px;
+    }
+
+    .index .product .wap-product img {
+        padding: 10px 0;
+    }
+
+    .index .product .wap-product h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #104772;
+        padding-bottom: 15px;
+    }
+
+    .index .product .wap-product .titles {
+        font-size: 16px;
+        font-weight: 600;
+        padding-bottom: 6px;
+    }
+
+    .index .product .wap-product ul {
+        padding-bottom: 5px;
+    }
+
+    .index .product .wap-product li {
+        list-style-type: disc;
+        margin-left: 20px;
+        padding-bottom: 5px;
+        color: #333;
+    }
+
+    .index .product .wap-product .box {
+        padding: 10px 0 20px 0;
+    }
+
+    .index .product .wap-product .btns {
+        border: 1px solid #104772;
+        border-radius: 8px;
+        height: 32px;
+        line-height: 32px;
+        width: 110px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .index .product .wap-product .pro-btn a {
+        display: block;
+        float: left;
+    }
+
+    .index .product .wap-product .pro-btn img {
+        padding: 0;
+        margin-left: 20px;
     }
 
     footer {
