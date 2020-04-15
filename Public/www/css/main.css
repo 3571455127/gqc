@@ -184,10 +184,10 @@ header .navbar-brand {
 }
 
 header .navbar-default .navbar-nav>li>a {
-    font-size: 20px;
+    font-size: 18px;
     color: #555555;
-    padding: 50px 20px;
-    text-transform: capitalize;
+    padding: 50px 15px;
+    text-transform: capitalize !important;
 }
 
 header .navbar-default .navbar-nav>.active>a,
@@ -314,7 +314,7 @@ header .header-fixed .navbar-brand {
 }
 
 header .header-fixed .navbar-default .navbar-nav>li>a {
-    font-size: 20px;
+    font-size: 18px;
     padding: 27px 20px;
 }
 
@@ -353,8 +353,9 @@ header .wap-banner {
 .index #application,
 .index #partner,
 .index #contact {
+    display: block;
+    height: 75px;
     margin-top: -75px;
-    padding-top: 75px;
 }
 
 /* attest */
@@ -363,7 +364,7 @@ header .wap-banner {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.index .attest .box-img {
+.index .attest .row>div:nth-child(1) {
     text-align: right;
     padding-right: 5%;
 }
@@ -461,6 +462,10 @@ header .wap-banner {
     border: 1px solid #fff;
 }
 
+.lg-backdrop.in {
+    opacity: 0.6;
+}
+
 /* product */
 
 /* about */
@@ -474,9 +479,9 @@ header .wap-banner {
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 5%;
     color: #fff;
-    padding: 50px 0;
+    padding: 30px 0;
+    margin-bottom: 20px;
 }
 
 .index .about-bg .about-box {
@@ -531,6 +536,11 @@ header .wap-banner {
 
 
 /* application */
+.index .application,
+.index .partner {
+    padding-top: 30px;
+}
+
 .index .application h6 {
     font-size: 16px;
     text-align: center;
@@ -538,7 +548,7 @@ header .wap-banner {
 }
 
 .index .application .list {
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 .index .application .list img {
@@ -559,9 +569,14 @@ header .wap-banner {
 /* application */
 
 /* partner */
+
 .index .partner .box-img {
     display: block;
     margin-bottom: 30px;
+}
+
+.index .partner .list {
+    padding-top: 15px;
 }
 
 /* footer */
@@ -794,15 +809,18 @@ footer form .footer-sub {
     header .pc-banner img {
         height: 720px;
     }
+
+    .index .about-bg .about-box .txt {
+        font-size: 16px;
+    }
 }
 
 @media all and (min-width: 980px) {
     .index .application .list .top {
         top: 0px;
     }
-    .index .about-bg .about-box .txt {
-        font-size: 16px;
-    }
+
+
 
 }
 

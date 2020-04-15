@@ -69,7 +69,7 @@ $(function () {
 var submitcount2 = 0;
 
 function beforeSubmit2(form) {
-
+    var re = /^[0-9]*$/;
     if (form.name.value == '') {
         alert('Name can not be empty');
         form.name.focus();
@@ -82,13 +82,17 @@ function beforeSubmit2(form) {
         alert('The email is wrong');
         form.email.focus();
         return false;
-    } else if (form.company.value == '') {
+    } else if (form.com.value == '') {
         alert('The company can not be empty');
-        form.company.focus();
+        form.com.focus();
         return false;
     } else if (form.selects.value == '') {
         alert('The select can not be empty');
         form.selects.focus();
+        return false;
+    } else if (!re.test(form.phone.value)) {
+        alert('The email is wrong');
+        form.phone.focus();
         return false;
     } else if (form.message.value == '') {
         alert('The message can not be empty');
