@@ -330,13 +330,15 @@
                                 {$r.cont}
                                 <div class="pro-btn clearfix">
                                     <a href="#contact" class="btns">Contact Us</a>
-                                    <div id="lightgallery">
+                                    <div id="lightgallery{$r.id}">
                                         <div data-src="{$r.document}">
                                             <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                 alt="Thumb-1">
                                         </div>
                                     </div>
-
+                                    <script>
+                                        lightGallery(document.getElementById('lightgallery{$r.id}'));
+                                    </script>
                                 </div>
                             </div>
                         </div>

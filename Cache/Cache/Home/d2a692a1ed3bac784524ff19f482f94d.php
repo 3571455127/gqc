@@ -400,13 +400,15 @@
                                 <?php echo ($r["cont"]); ?>
                                 <div class="pro-btn clearfix">
                                     <a href="#contact" class="btns">Contact Us</a>
-                                    <div id="lightgallery">
+                                    <div id="lightgallery<?php echo ($r["id"]); ?>">
                                         <div data-src="<?php echo ($r["document"]); ?>">
                                             <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                 alt="Thumb-1">
                                         </div>
                                     </div>
-
+                                    <script>
+                                        lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
+                                    </script>
                                 </div>
                             </div>
                         </div><?php endforeach; endif;?>
