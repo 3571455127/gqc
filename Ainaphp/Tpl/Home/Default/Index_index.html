@@ -454,6 +454,7 @@
             <div class="wap-product">
                 <div class="container">
                     <div class="row">
+                        <YP:list order="listorder desc" name="Product" id="r" limit="12" field='thumb,title,cont,listorder,id,document'>
                         <div class="box">
                             <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
                             <div class="txt">
@@ -467,6 +468,7 @@
                                 </div>
                             </div>
                         </div>
+                        </YP:list>
                     </div>
                 </div>
             </div>
