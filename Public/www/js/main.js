@@ -14,7 +14,6 @@ $(function () {
     //         nextEl: '.pc-banner .swiper-button-next',
     //         prevEl: '.pc-banner .swiper-button-prev',
     //     },
-
     // })
 
     // wap-banner  

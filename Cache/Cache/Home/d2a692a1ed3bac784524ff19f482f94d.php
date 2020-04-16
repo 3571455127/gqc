@@ -429,7 +429,7 @@
                                         <div class="pro-btn clearfix">
                                             <a href="#contact" class="btns">Contact Us</a>
                                             <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
-                                                    class="img-responsive" src="/Public/www/images/download-b.png"
+                                                    class="img-responsive" src="/Public/www/images/download-w.png"
                                                     alt="<?php echo ($r["title"]); ?>"></a>
                                         </div>
                                     </div>
@@ -471,7 +471,7 @@
                                         <div class="pro-btn clearfix">
                                             <a href="#contact" class="btns">Contact Us</a>
                                             <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
-                                                    class="img-responsive" src="/Public/www/images/download-b.png"
+                                                    class="img-responsive" src="/Public/www/images/download-w.png"
                                                     alt="<?php echo ($r["title"]); ?>"></a>
                                         </div>
                                     </div>

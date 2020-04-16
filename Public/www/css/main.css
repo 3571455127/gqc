@@ -384,6 +384,17 @@ header .wap-banner,
     padding: 30px 0;
 }
 
+.index .product .pro-box:hover .image img {
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.index .product .pro-bg .pro-box:hover .image img {
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
 .index .product .pro-box .txt {
     padding: 0 30px 0 50px;
 }
@@ -582,6 +593,10 @@ header .wap-banner,
 .index .partner .box-img {
     display: block;
     margin-bottom: 30px;
+}
+
+.index .partner .box-img:hover {
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
 }
 
 .index .partner .list {
