@@ -1,21 +1,21 @@
 $(function () {
 
     // pc-banner
-    var mySwiper = new Swiper('.pc-banner .swiper-container', {
-        autoplay: true,
-        speed: 1500,
-        autoHeight: true,
-        loop: true,
-        pagination: {
-            el: '.pc-banner .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.pc-banner .swiper-button-next',
-            prevEl: '.pc-banner .swiper-button-prev',
-        },
+    // var mySwiper = new Swiper('.pc-banner .swiper-container', {
+    //     autoplay: true,
+    //     speed: 1500,
+    //     autoHeight: true,
+    //     loop: true,
+    //     pagination: {
+    //         el: '.pc-banner .swiper-pagination',
+    //         clickable: true,
+    //     },
+    //     navigation: {
+    //         nextEl: '.pc-banner .swiper-button-next',
+    //         prevEl: '.pc-banner .swiper-button-prev',
+    //     },
 
-    })
+    // })
 
     // wap-banner  
     var mySwiper = new Swiper('.wap-banner .swiper-container', {
@@ -31,13 +31,9 @@ $(function () {
     })
 
 
-
     $(".nav li").click(function () {
         $(this).parent().parent().removeClass("in");
     })
-
-
-
 
 
     // 滚动监听
@@ -63,7 +59,7 @@ $(function () {
             scrollTop: 0
         }, 1000);
     });
-    lightGallery(document.getElementById('lightgallery'));
+    // lightGallery(document.getElementById('lightgallery'));
 })
 
 var submitcount2 = 0;

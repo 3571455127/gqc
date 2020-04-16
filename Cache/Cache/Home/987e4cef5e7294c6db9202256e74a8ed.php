@@ -16,13 +16,13 @@
     <meta name="Robots" content="all">
 
     <title><?php if(MODULE_NAME != 'Index') : echo ($seo_title); else : echo ($site_name); endif;?></title>
-    <link rel="stylesheet" href="__PUBLIC__/www/css/lightgallery.min.css">
+    <!-- <link rel="stylesheet" href="__PUBLIC__/www/css/lightgallery.min.css"> -->
     <link rel="stylesheet" href="__PUBLIC__/www/css/swiper.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/main.css">
     <script src="__PUBLIC__/www/js/jquery.min.js"></script>
-    <script src="__PUBLIC__/www/js/lightgallery.js"></script>
-    <script src="__PUBLIC__/www/js/lg-zoom.js"></script>
+    <!-- <script src="__PUBLIC__/www/js/lightgallery.js"></script>
+    <script src="__PUBLIC__/www/js/lg-zoom.js"></script> -->
     <script src="__PUBLIC__/www/js/swiper.min.js"></script>
     <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/www/js/main.js"></script>

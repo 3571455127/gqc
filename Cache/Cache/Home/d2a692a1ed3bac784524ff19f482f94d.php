@@ -16,13 +16,13 @@
     <meta name="Robots" content="all">
 
     <title><?php if(MODULE_NAME != 'Index') : echo ($seo_title); else : echo ($site_name); endif;?></title>
-    <link rel="stylesheet" href="__PUBLIC__/www/css/lightgallery.min.css">
+    <!-- <link rel="stylesheet" href="__PUBLIC__/www/css/lightgallery.min.css"> -->
     <link rel="stylesheet" href="__PUBLIC__/www/css/swiper.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/main.css">
     <script src="__PUBLIC__/www/js/jquery.min.js"></script>
-    <script src="__PUBLIC__/www/js/lightgallery.js"></script>
-    <script src="__PUBLIC__/www/js/lg-zoom.js"></script>
+    <!-- <script src="__PUBLIC__/www/js/lightgallery.js"></script>
+    <script src="__PUBLIC__/www/js/lg-zoom.js"></script> -->
     <script src="__PUBLIC__/www/js/swiper.min.js"></script>
     <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/www/js/main.js"></script>
@@ -402,7 +402,7 @@
                                     <?php echo ($r["cont"]); ?>
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery<?php echo ($r["id"]); ?>">
+                                        <!-- <div id="lightgallery<?php echo ($r["id"]); ?>">
                                             <div data-src="<?php echo ($r["document"]); ?>">
                                                 <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                     alt="Thumb-1">
@@ -410,7 +410,10 @@
                                         </div>
                                         <script>
                                             lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
-                                        </script>
+                                        </script> -->
+                                        <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
+                                                class="img-responsive" src="/Public/www/images/download-b.png"
+                                                alt="<?php echo ($r["title"]); ?>"></a>
                                     </div>
                                 </div>
                             </div><?php endforeach; endif;?>
@@ -425,16 +428,9 @@
                                         <?php echo ($r["cont"]); ?>
                                         <div class="pro-btn clearfix">
                                             <a href="#contact" class="btns">Contact Us</a>
-                                            <div id="lightgallery<?php echo ($r["id"]); ?>">
-                                                <div data-src="<?php echo ($r["document"]); ?>">
-                                                    <img class="img-responsive" src="/Public/www/images/download-w.png"
-                                                        alt="Thumb-1">
-                                                </div>
-                                            </div>
-
-                                            <script>
-                                                lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
-                                            </script>
+                                            <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
+                                                    class="img-responsive" src="/Public/www/images/download-b.png"
+                                                    alt="<?php echo ($r["title"]); ?>"></a>
                                         </div>
                                     </div>
                                     <div class="image col-lg-6 col-md-6 col-sm-6">
@@ -456,16 +452,9 @@
                                     <?php echo ($r["cont"]); ?>
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery<?php echo ($r["id"]); ?>">
-                                            <div data-src="<?php echo ($r["document"]); ?>">
-                                                <img class="img-responsive" src="/Public/www/images/download-b.png"
-                                                    alt="Thumb-1">
-                                            </div>
-                                        </div>
-
-                                        <script>
-                                            lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
-                                        </script>
+                                        <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
+                                                class="img-responsive" src="/Public/www/images/download-b.png"
+                                                alt="<?php echo ($r["title"]); ?>"></a>
                                     </div>
                                 </div>
                             </div><?php endforeach; endif;?>
@@ -481,16 +470,9 @@
                                         <?php echo ($r["cont"]); ?>
                                         <div class="pro-btn clearfix">
                                             <a href="#contact" class="btns">Contact Us</a>
-                                            <div id="lightgallery<?php echo ($r["id"]); ?>">
-                                                <div data-src="<?php echo ($r["document"]); ?>">
-                                                    <img class="img-responsive" src="/Public/www/images/download-w.png"
-                                                        alt="Thumb-1">
-                                                </div>
-                                            </div>
-
-                                            <script>
-                                                lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
-                                            </script>
+                                            <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
+                                                    class="img-responsive" src="/Public/www/images/download-b.png"
+                                                    alt="<?php echo ($r["title"]); ?>"></a>
                                         </div>
                                     </div>
                                     <div class="image col-lg-6 col-md-6 col-sm-6">
@@ -513,16 +495,9 @@
                                     <?php echo ($r["cont"]); ?>
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery<?php echo ($r["id"]); ?>">
-                                            <div data-src="<?php echo ($r["document"]); ?>">
-                                                <img class="img-responsive" src="/Public/www/images/download-b.png"
-                                                    alt="Thumb-1">
-                                            </div>
-                                        </div>
-
-                                        <script>
-                                            lightGallery(document.getElementById('lightgallery<?php echo ($r["id"]); ?>'));
-                                        </script>
+                                        <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
+                                                class="img-responsive" src="/Public/www/images/download-b.png"
+                                                alt="<?php echo ($r["title"]); ?>"></a>
                                     </div>
                                 </div>
                             </div><?php endforeach; endif;?>
@@ -535,22 +510,19 @@
             <div class="wap-product">
                 <div class="container">
                     <div class="row">
-
                         <div class="box">
                             <div class="box-img"> <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>"></div>
                             <div class="txt">
                                 <?php echo ($r["cont"]); ?>
                                 <div class="pro-btn clearfix">
                                     <a href="#contact" class="btns">Contact Us</a>
-                                    <a href="" download=""> <img class="img-responsive"
-                                            src="/Public/www/images/download-b.png"></a>
+                                    <a href="<?php echo ($r["document"]); ?>" title="<?php echo ($r["title"]); ?>" download="<?php echo ($r["title"]); ?>"> <img
+                                            class="img-responsive" src="/Public/www/images/download-b.png"
+                                            alt="<?php echo ($r["title"]); ?>"></a>
 
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>

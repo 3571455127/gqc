@@ -333,7 +333,7 @@
                                     {$r.cont}
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery{$r.id}">
+                                        <!-- <div id="lightgallery{$r.id}">
                                             <div data-src="{$r.document}">
                                                 <img class="img-responsive" src="/Public/www/images/download-b.png"
                                                     alt="Thumb-1">
@@ -341,7 +341,10 @@
                                         </div>
                                         <script>
                                             lightGallery(document.getElementById('lightgallery{$r.id}'));
-                                        </script>
+                                        </script> -->
+                                        <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
+                                                class="img-responsive" src="/Public/www/images/download-b.png"
+                                                alt="{$r.title}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -359,16 +362,9 @@
                                         {$r.cont}
                                         <div class="pro-btn clearfix">
                                             <a href="#contact" class="btns">Contact Us</a>
-                                            <div id="lightgallery{$r.id}">
-                                                <div data-src="{$r.document}">
-                                                    <img class="img-responsive" src="/Public/www/images/download-w.png"
-                                                        alt="Thumb-1">
-                                                </div>
-                                            </div>
-
-                                            <script>
-                                                lightGallery(document.getElementById('lightgallery{$r.id}'));
-                                            </script>
+                                            <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
+                                                    class="img-responsive" src="/Public/www/images/download-b.png"
+                                                    alt="{$r.title}"></a>
                                         </div>
                                     </div>
                                     <div class="image col-lg-6 col-md-6 col-sm-6">
@@ -393,16 +389,9 @@
                                     {$r.cont}
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery{$r.id}">
-                                            <div data-src="{$r.document}">
-                                                <img class="img-responsive" src="/Public/www/images/download-b.png"
-                                                    alt="Thumb-1">
-                                            </div>
-                                        </div>
-
-                                        <script>
-                                            lightGallery(document.getElementById('lightgallery{$r.id}'));
-                                        </script>
+                                        <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
+                                                class="img-responsive" src="/Public/www/images/download-b.png"
+                                                alt="{$r.title}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -421,16 +410,9 @@
                                         {$r.cont}
                                         <div class="pro-btn clearfix">
                                             <a href="#contact" class="btns">Contact Us</a>
-                                            <div id="lightgallery{$r.id}">
-                                                <div data-src="{$r.document}">
-                                                    <img class="img-responsive" src="/Public/www/images/download-w.png"
-                                                        alt="Thumb-1">
-                                                </div>
-                                            </div>
-
-                                            <script>
-                                                lightGallery(document.getElementById('lightgallery{$r.id}'));
-                                            </script>
+                                            <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
+                                                    class="img-responsive" src="/Public/www/images/download-b.png"
+                                                    alt="{$r.title}"></a>
                                         </div>
                                     </div>
                                     <div class="image col-lg-6 col-md-6 col-sm-6">
@@ -456,16 +438,9 @@
                                     {$r.cont}
                                     <div class="pro-btn clearfix">
                                         <a href="#contact" class="btns">Contact Us</a>
-                                        <div id="lightgallery{$r.id}">
-                                            <div data-src="{$r.document}">
-                                                <img class="img-responsive" src="/Public/www/images/download-b.png"
-                                                    alt="Thumb-1">
-                                            </div>
-                                        </div>
-
-                                        <script>
-                                            lightGallery(document.getElementById('lightgallery{$r.id}'));
-                                        </script>
+                                        <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
+                                                class="img-responsive" src="/Public/www/images/download-b.png"
+                                                alt="{$r.title}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -479,22 +454,19 @@
             <div class="wap-product">
                 <div class="container">
                     <div class="row">
-
                         <div class="box">
                             <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
                             <div class="txt">
                                 {$r.cont}
                                 <div class="pro-btn clearfix">
                                     <a href="#contact" class="btns">Contact Us</a>
-                                    <a href="" download=""> <img class="img-responsive"
-                                            src="/Public/www/images/download-b.png"></a>
+                                    <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
+                                            class="img-responsive" src="/Public/www/images/download-b.png"
+                                            alt="{$r.title}"></a>
 
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
