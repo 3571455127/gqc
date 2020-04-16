@@ -77,16 +77,8 @@ function beforeSubmit2(form) {
         alert('The email is wrong');
         form.email.focus();
         return false;
-    } else if (form.com.value == '') {
-        alert('The company can not be empty');
-        form.com.focus();
-        return false;
-    } else if (form.selects.value == '') {
-        alert('The select can not be empty');
-        form.selects.focus();
-        return false;
     } else if (!re.test(form.phone.value)) {
-        alert('The email is wrong');
+        alert('The phone is wrong');
         form.phone.focus();
         return false;
     } else if (form.message.value == '') {

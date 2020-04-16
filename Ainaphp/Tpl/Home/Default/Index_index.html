@@ -20,19 +20,23 @@
                         <div class="box clearfix">
                             <div class="col-lg-6 col-md-6">
                                 <p>Name <span> *</span></p>
-                                <input type="text" name="name">
+                                <input placeholder="Name" type="text" name="name">
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <p>E-mail <span> *</span></p>
-                                <input type="text" name="email">
+                                <input placeholder="Email" type="text" name="email">
                             </div>
                         </div>
                         <div class="box clearfix">
                             <div class="col-lg-6 col-md-6">
-                                <p>Company <span> *</span></p>
-                                <input type="text" name="com">
+                                <p>Company</p>
+                                <input placeholder="Company" type="text" name="com">
                             </div>
                             <div class="col-lg-6 col-md-6">
+                                <p>Phone Number</p>
+                                <input placeholder="Phone" type="text" name="phone">
+                            </div>
+                            <!-- <div class="col-lg-6 col-md-6">
                                 <p>Country <span> *</span></p>
                                 <select name="country">
                                     <option value="">Select a Country</option>
@@ -221,7 +225,7 @@
                                     <option value="Turkmenistan">Turkmenistan</option>
                                     <option value="Uganda">Uganda</option>
                                     <option value="Ukraine">Ukraine</option>
-                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="United ArabEmirates">United ArabEmirates</option>
                                     <option value="United Kingdom">United Kingdom</option>
                                     <option value="United States">United States</option>
                                     <option value="Uruguay">Uruguay</option>
@@ -233,22 +237,23 @@
                                     <option value="Zambia">Zambia</option>
                                     <option value="Zimbabwe">Zimbabwe</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="box clearfix">
-                            <div class="col-lg-6 col-md-6">
+                        <!-- <div class="box clearfix">
+                          <div class="col-lg-6 col-md-6">
                                 <p>Phone Number</p>
-                                <input type="text" name="phone">
-                            </div>
+                                <input placeholder="Phone" type="text" name="phone">
+                            </div> 
                             <div class="col-lg-6 col-md-6">
                                 <p>Whats App</p>
-                                <input type="text" name="whatsapp">
-                            </div>
-                        </div>
+                                <input placeholder="Whats App." type="text" name="whatsapp">
+                            </div> 
+                         </div>-->
                         <div class="box clearfix">
                             <div class="col-lg-6 col-md-6">
                                 <p>Consulting Information <span> *</span></p>
-                                <textarea name="message"></textarea>
+                                <textarea placeholder="Please enter your consulting information. "
+                                    name="message"></textarea>
                             </div>
                             <div class="txt col-lg-6 col-md-6">
                                 <p>{$phone}</br>
@@ -454,20 +459,21 @@
             <div class="wap-product">
                 <div class="container">
                     <div class="row">
-                        <YP:list order="listorder desc" name="Product" id="r" limit="12" field='thumb,title,cont,listorder,id,document'>
-                        <div class="box">
-                            <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
-                            <div class="txt">
-                                {$r.cont}
-                                <div class="pro-btn clearfix">
-                                    <a href="#contact" class="btns">Contact Us</a>
-                                    <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
-                                            class="img-responsive" src="/Public/www/images/download-b.png"
-                                            alt="{$r.title}"></a>
+                        <YP:list order="listorder desc" name="Product" id="r" limit="12"
+                            field='thumb,title,cont,listorder,id,document'>
+                            <div class="box">
+                                <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
+                                <div class="txt">
+                                    {$r.cont}
+                                    <div class="pro-btn clearfix">
+                                        <a href="#contact" class="btns">Contact Us</a>
+                                        <a href="{$r.document}" title="{$r.title}" download="{$r.title}"> <img
+                                                class="img-responsive" src="/Public/www/images/download-b.png"
+                                                alt="{$r.title}"></a>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </YP:list>
                     </div>
                 </div>
@@ -499,7 +505,7 @@
                 <div class="row">
                     <h3>application</h3>
                     <div class="title">BLIND RIVETS SERIES</div>
-                    <h6>Our products are mainly used in electrical appliances, computers, toys, watches, glasses,
+                    <h6>Our products are mainly used inElectrical appliances, computers, toys, watches, glasses,
                         instruments, furniture, automobiles, ships and other production areas.</h6>
                     <div class="list clearfix">
                         <YP:list order="listorder desc" catid="77" id="r" limit="12" field='thumb,title,listorder,id'>
@@ -558,27 +564,36 @@
                         <li>{$domestic_fax}</li>
                     </ul>
                 </div>
-                <div class="col-lg-7 col-md-7">
+                <div class="footer-padding col-lg-7 col-md-7">
                     <form class="clearfix" method="post" action="index.php?g=Home&a=message"
                         onsubmit="return beforeSubmit2(this);">
 
                         <div class="box clearfix">
                             <div class="col-lg-6 col-md-6 col-xs-6">
                                 <p>Name <span> *</span></p>
-                                <input type="text" name="name">
+                                <input placeholder="Name" type="text" name="name">
                             </div>
                             <div class="col-lg-6 col-md-6 col-xs-6">
                                 <p>E-mail <span> *</span></p>
-                                <input type="text" name="email">
+                                <input placeholder="Email" type="text" name="email">
                             </div>
                         </div>
                         <div class="box clearfix">
                             <div class="col-lg-6 col-md-6 col-xs-6">
-                                <p>Company <span> *</span></p>
-                                <input type="text" name="com">
+                                <p>Company </p>
+                                <input placeholder="Company" type="text" name="com">
                             </div>
                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <p>Phone Number</p>
+                                <input placeholder="Phone" type="text" name="phone">
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-6 col-md-6 col-xs-6">
                                 <p>Country <span> *</span></p>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <p>Phone Number</p>
+                                    <input placeholder="Phone" type="text" name="phone">
+                                </div>
                                 <select name="country">
                                     <option value="">Select a Country</option>
                                     <option value="Afghanistan">Afghanistan</option>
@@ -766,7 +781,7 @@
                                     <option value="Turkmenistan">Turkmenistan</option>
                                     <option value="Uganda">Uganda</option>
                                     <option value="Ukraine">Ukraine</option>
-                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="United ArabEmirates">United ArabEmirates</option>
                                     <option value="United Kingdom">United Kingdom</option>
                                     <option value="United States">United States</option>
                                     <option value="Uruguay">Uruguay</option>
@@ -777,23 +792,25 @@
                                     <option value="Yemen">Yemen</option>
                                     <option value="Zambia">Zambia</option>
                                     <option value="Zimbabwe">Zimbabwe</option>
-                                </select>
+                               
                             </div>
-                        </div>
-                        <div class="box clearfix">
+                        </div>-->
+
+                        <!-- <div class="box clearfix">
                             <div class="col-lg-6 col-md-6 col-xs-6">
                                 <p>Phone Number</p>
-                                <input type="text" name="phone">
+                                <input placeholder="Phone" type="text" name="phone">
                             </div>
                             <div class="col-lg-6 col-md-6 col-xs-6">
                                 <p>Whats App</p>
-                                <input type="text" name="whatsapp">
+                                <input placeholder="Whats App" type="text" name="whatsapp">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="box clearfix">
                             <div class="col-lg-6 col-md-6">
                                 <p>Consulting Information <span> *</span></p>
-                                <textarea name="message"></textarea>
+                                <textarea placeholder="Please enter your consulting information."
+                                    name="message"></textarea>
                             </div>
 
                         </div>
