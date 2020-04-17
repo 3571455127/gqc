@@ -558,7 +558,7 @@
                 <div class="row">
                     <h3>application</h3>
                     <div class="title">BLIND RIVETS SERIES</div>
-                    <h6>Our products are mainly used inElectrical appliances, computers, toys, watches, glasses,
+                    <h6>Our products are mainly used in Electrical appliances, computers, toys, watches, glasses,
                         instruments, furniture, automobiles, ships and other production areas.</h6>
                     <div class="list clearfix">
                         <?php  $_result=M("Case")->field("thumb,title,listorder,id")->where(" 1  AND status=1  AND catid=77")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="images col-lg-3 col-md-3 col-sm-6">

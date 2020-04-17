@@ -17,17 +17,17 @@ $(function () {
     // })
 
     // wap-banner  
-    var mySwiper = new Swiper('.wap-banner .swiper-container', {
-        autoplay: true,
-        speed: 1500,
-        autoHeight: true,
-        loop: true,
-        pagination: {
-            el: '.wap-banner .swiper-pagination',
-            clickable: true,
-        },
+    // var mySwiper = new Swiper('.wap-banner .swiper-container', {
+    //     autoplay: true,
+    //     speed: 1500,
+    //     autoHeight: true,
+    //     loop: true,
+    //     pagination: {
+    //         el: '.wap-banner .swiper-pagination',
+    //         clickable: true,
+    //     },
 
-    })
+    // })
 
 
     $(".nav li").click(function () {
